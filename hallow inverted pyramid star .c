@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 
 int main()
@@ -8,18 +7,20 @@ int main()
      scanf("%d",&n);
      for ( i= n;i>=1;i--)
      {
-     for ( j=n; j>i;j--){
-
-     }
-     printf(" ");
+     for ( j=n; j>i;j--)
+     {
+         printf(" ");
     
     }
-    for(j=1;j<=(2*i-1);j++){
-        if(j==1 || j == (2*i-1); j++){
-    }
-     if (j==1||j==(2*i-1)||i==n){
+    for(j=1;j<=(2*i-1);j++)
+    {
+        
+     if (j==1||j==(2*i-1)||i==n)
+     {
         printf("*");
-     } else{
+     }
+     else
+     {
         printf(" ");
      }
     }
