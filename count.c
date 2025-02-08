@@ -1,27 +1,21 @@
 #include<stdio.h>
-int countDigits(int num)
+int countbit(int n)
 {
-   static int count=0;
-    if (num>0)
-    {
-        
-     count ++;
-     countDigits(num/10);
-
-    }
-    else{
-    return count;
-}
-}
-int main ()
+    int count=0;
+    while(n>0)
 {
-        int number;
-        int count;
-        printf("enter the number of terms");
-        scanf("%d",&number);
-        count=countDigits(number);
-        printf("total number of nigits :%d\n",count);
-        return 0;
+    n=n&(n-1);
+    count=count + 1;
 
+}
+return count;
 
+}
+int main()
+{
+    int n;
+    printf("enter the number");
+    scanf("%d",&n);
+    printf("%d",countbit(n));
+    return 0;
 }
